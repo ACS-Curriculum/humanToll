@@ -17,14 +17,16 @@ body {
   flex-direction: column;
   font-size: 1rem;
   font-family: "Saira Stencil One", cursive;
+  border: 5px solid var(--black);
+  background-color: var(--blackb);
 }
-header {
-  background-color: var(--black);
-  padding: 0.3em;
+main {
+  display: flex;
+  justify-content: center;
+  background-color: var(--blackb);
 }
 img {
-  display: block;
-  width: 100%;
+  width: 60%;
   margin-bottom: none;
 }
 
@@ -41,11 +43,19 @@ a:active {
   color: var(--blue);
 }
 
-header img {
-  display: block;
-  width: 100%;
-  margin-bottom: none;
+/*||blocks or components*/
+header {
+  display: flex;
+  justify-content: center;
+  padding: 0.3em;
+  margin: 2em;
 }
+.header__img {
+  max-width: 60%;
+  height: auto;
+  padding: none;
+}
+
 nav a:hover {
   background: var(--black);
 }
@@ -54,6 +64,7 @@ nav > ul > li > a {
   margin-right: 50px;
   text-decoration: none;
   list-style: none;
+  font-size: 1.3em;
 }
 
 .menu {
@@ -63,19 +74,19 @@ nav > ul > li > a {
   background-color: var(--black);
   list-style: none;
   text-decoration: none;
-  border-bottom: 0.2em solid var(--yellow);
+  border-bottom: 0.3em solid var(--yellow);
 }
 .menu__links {
   list-style: none;
   text-decoration: none;
-  height: 2em;
+  height: 1.9em;
   border-bottom: 0.2em solid var(--black);
+  border-left: 0.2em solid var(--black);
 }
 
 .menu__links a {
   list-style: none;
   text-decoration: none;
-  height: 2em;
 }
 
 .menu__links:hover > .submenu {
@@ -92,11 +103,11 @@ nav > ul > li > a {
   list-style: none;
 }
 footer {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-evenly;
-  align-content: center;
   background: var(--black);
   border-top: 0.2em solid var(--yellow);
   color: var(--beige);
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
 }
+
