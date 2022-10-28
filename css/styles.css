@@ -34,10 +34,10 @@ a:link {
   color: var(--beige);
 }
 a:visited {
-  color: var(--yellow);
+  color: var(--white);
 }
 a:hover {
-  color: var(--red);
+  color: var(--yellow);
 }
 a:active {
   color: var(--blue);
@@ -74,7 +74,8 @@ nav > ul > li > a {
   background-color: var(--black);
   list-style: none;
   text-decoration: none;
-  border-bottom: 0.3em solid var(--yellow);
+  border-top: 0.2em solid var(--yellow);
+  border-bottom: 0.2em solid var(--yellow);
 }
 .menu__links {
   list-style: none;
@@ -110,4 +111,3 @@ footer {
   flex-grow: 1;
   justify-content: space-evenly;
 }
-
